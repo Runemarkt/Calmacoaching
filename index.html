@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>4 Elements Voedingscoaching</title>
+  <title>Calma Coaching</title>
   <style>
     body {
       margin: 0;
@@ -34,4 +34,156 @@
       color: #f0f8f5;
       text-decoration: none;
       font-weight: bold;
-      fo
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #3cd3ad;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      color: #3cd3ad;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #3cd3ad;
+      padding-bottom: 0.25rem;
+      max-width: fit-content;
+    }
+    .elements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .element-box {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .element-box h3 {
+      margin-top: 0;
+      color: #2f4f4f;
+    }
+    .whatsapp-contact {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(37, 211, 102, 0.5);
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-contact:hover {
+      background-color: #1da851;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2f4f4f;
+      color: #f0f8f5;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive aanpassingen */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        gap: 1rem;
+      }
+      nav a {
+        font-size: 1rem;
+      }
+      main {
+        margin: 1rem;
+        padding: 0 0.5rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      .element-box {
+        padding: 0.75rem;
+      }
+      .whatsapp-contact {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>4 Elements way of thinking</h1>
+    <p>Gezond afvallen met 100% organische voeding – Water, Aarde, Vuur & Lucht in balans</p>
+  </header>
+
+  <nav>
+    <a href="#about">Over Coaching</a>
+    <a href="#elements">De 4 Elements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>Over Coaching</h2>
+      <p>Bij Calma Coaching begeleiden we jou op een natuurlijke manier naar een gezonder leven.  
+         Onze focus ligt op gezonde, organische voeding gecombineerd met een holistische aanpak gebaseerd op de vier elementen.  
+         We helpen je duurzaam en effectief af te vallen zonder dieetstress.</p>
+    </section>
+
+    <section id="elements">
+      <h2>De 4 Elements</h2>
+      <div class="elements">
+        <div class="element-box">
+          <h3>Water</h3>
+          <p>Hydratatie, zuiverheid en het bevorderen van het lichaam’s natuurlijke reiniging.</p>
+        </div>
+        <div class="element-box">
+          <h3>Aarde</h3>
+          <p>Voedingsrijk, geaard eten dat lichaam en geest stabiliseert.</p>
+        </div>
+        <div class="element-box">
+          <h3>Vuur</h3>
+          <p>Verbranding, energie en het stimuleren van een gezonde metabolisme.</p>
+        </div>
+        <div class="element-box">
+          <h3>Lucht</h3>
+          <p>Ademhaling, ontspanning en mentale helderheid voor balans.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Wil je starten met jouw gezonde transformatie? Klik op onderstaande knop om direct via WhatsApp contact op te nemen:</p>
+      <a 
+        class="whatsapp-contact" 
+        href="https://api.whatsapp.com/send?phone=32456751031&text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%204%20Elements%20Voedingscoaching."
+        target="_blank" 
+        rel="noopener"
+      >Contacteer onze Calma coach:</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Calma Coaching. Alle rechten voorbehouden.
+  </footer>
+
+</body>
+</html>
